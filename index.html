@@ -1,0 +1,1985 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه اصلی | هیئت شباب علی ابن الحسین (ع)</title>
+    <meta name="description" content="پرتال جامع اطلاع‌رسانی، آرشیو صوت و نوا، مراسم‌ها، گالری تصاویر، ثبت‌نام خادم افتخاری و نذورات هیئت شباب علی ابن الحسین (ع)" />
+    <meta property="og:title" content="هیئت شباب علی ابن الحسین (ع)" />
+    <meta property="og:description" content="پرتال جامع اطلاع‌رسانی، آرشیو صوت و نوا، مراسم‌ها، ثبت‌نام خادم افتخاری و نذورات هیئت شباب علی ابن الحسین (ع)" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts & Tailwind CDN for pure standalone GitHub Pages compatibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body class="bg-[#0b0d13] text-slate-100 min-h-screen">
+
+    <!-- Global Persistent Audio Bar (Hidden by default, shows when audio played) -->
+    <div id="global-audio-bar" class="fixed bottom-0 left-0 right-0 z-50 glass-nav border-t border-amber-500/20 px-4 py-3 items-center justify-between shadow-2xl hidden" style="backdrop-filter: blur(20px);">
+      <div class="flex items-center gap-4 max-w-7xl mx-auto w-full justify-between">
+        <div class="flex items-center gap-3">
+          <div class="flex items-end gap-1 h-6">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+          </div>
+          <div>
+            <div id="current-track-title" class="font-bold text-sm text-white truncate max-w-xs md:max-w-md">شور - ای علمدار رشیدم</div>
+            <div id="current-track-artist" class="text-xs text-amber-400">کربلایی محمدحسین پویانفر</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="toggleGlobalAudio()" id="play-pause-icon" class="w-10 h-10 rounded-full bg-red-600 hover:bg-red-500 text-white flex items-center justify-center transition shadow-lg cursor-pointer">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </button>
+          <span id="current-track-duration" class="text-xs font-mono text-slate-400">۰۶:۴۵</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE DRAWER NAVIGATION (منوی سه خط مخصوص موبایل برای مراسم ها، درباره ما و پیوستن خادمین) -->
+    <div id="mobile-drawer" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden transition-all" onclick="if(event.target === this) closeMobileMenu()">
+      <div class="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-[#0d1017] border-l border-amber-500/20 shadow-2xl flex flex-col z-50 overflow-y-auto" onclick="event.stopPropagation()">
+        <!-- Drawer Header -->
+        <div class="p-5 border-b border-white/10 flex items-center justify-between bg-slate-900/60 sticky top-0 z-10 backdrop-blur-md">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-red-900/40 shrink-0">
+              <span class="text-amber-400 font-bold text-base">ياعلی</span>
+            </div>
+            <div>
+              <h2 class="font-bold text-sm text-white leading-tight">هیئت شباب علی ابن الحسین (ع)</h2>
+              <p class="text-[10px] text-amber-400">منوی اختصاصی نسخه همراه</p>
+            </div>
+          </div>
+          <button type="button" onclick="closeMobileMenu()" class="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition cursor-pointer" aria-label="بستن منو">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <!-- Featured Highlights Section Requested by User -->
+        <div class="p-4 space-y-3">
+          <div class="text-[11px] font-bold text-amber-400 uppercase tracking-wider px-1">بخش‌های ویژه هیئت (نسخه موبایل)</div>
+
+          <!-- 1. مراسم‌ها -->
+          <a href="#ceremonies" data-path="ceremonies" onclick="closeMobileMenu()" class="block p-4 rounded-2xl bg-gradient-to-br from-red-950/60 to-slate-900 border border-red-800/50 hover:border-amber-500/60 transition group shadow-lg">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs px-2 py-0.5 rounded-full bg-red-900/80 text-red-200 border border-red-700 font-bold">جلسات و مناسبت‌ها</span>
+              <svg class="w-4 h-4 text-slate-400 group-hover:text-amber-400 transition -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <h3 class="font-bold text-white text-base group-hover:text-amber-400 transition">مراسمهای هیئت</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">زمان‌بندی مراسم هفتگی، سخنرانان، ذاکرین و ثبت حضور در خیمه‌گاه</p>
+          </a>
+
+          <!-- 2. درباره ما -->
+          <a href="#about-us" data-path="about-us" onclick="closeMobileMenu()" class="block p-4 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-700/70 hover:border-amber-500/60 transition group shadow-lg">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs px-2 py-0.5 rounded-full bg-slate-800 text-amber-400 border border-amber-500/30 font-bold">منشور و رسالت</span>
+              <svg class="w-4 h-4 text-slate-400 group-hover:text-amber-400 transition -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <h3 class="font-bold text-white text-base group-hover:text-amber-400 transition">درباره ما و منشور هیئت</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">تاریخچه تأسیس، اهداف معرفتی، ارکان تربیتی و هیئت امنای جوانان</p>
+          </a>
+
+          <!-- 3. پیوستن خادمین -->
+          <a href="#volunteer-registration" data-path="volunteer-registration" onclick="closeMobileMenu()" class="block p-4 rounded-2xl bg-gradient-to-br from-amber-950/70 via-slate-900 to-slate-950 border border-amber-600/50 hover:border-amber-400 transition group shadow-lg">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs px-2 py-0.5 rounded-full bg-amber-900/80 text-amber-200 border border-amber-600 font-bold">پویش خادمی</span>
+              <svg class="w-4 h-4 text-amber-400 group-hover:scale-110 transition -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <h3 class="font-bold text-amber-300 text-base group-hover:text-amber-200 transition">پیوستن به خادمین افتخاری / ثبتنام</h3>
+            <p class="text-xs text-slate-300 mt-1 leading-relaxed">عضویت در کارگروه‌های صوت، رسانه، چایخانه و صدور کارت خادم افتخاری</p>
+          </a>
+
+          <!-- 4. نقشه و راهنمای حسینیه -->
+          <a href="#map" data-path="map" onclick="closeMobileMenu()" class="block p-4 rounded-2xl bg-gradient-to-br from-emerald-950/60 to-slate-900 border border-emerald-800/50 hover:border-amber-500/60 transition group shadow-lg">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-900/80 text-emerald-200 border border-emerald-700 font-bold">نقشه و مسیریابی</span>
+              <svg class="w-4 h-4 text-slate-400 group-hover:text-amber-400 transition -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <h3 class="font-bold text-white text-base group-hover:text-amber-400 transition">نقشه و کروکی حسینیه</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">مسیریابی در نشان، بلد و نقشه درب‌های ورود و چایخانه</p>
+          </a>
+        </div>
+
+        <!-- Full Navigation Links Divider -->
+        <div class="p-4 pt-2 border-t border-white/10 flex-1">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider px-1 mb-2">سایر صفحات و امکانات</div>
+          <div class="space-y-1">
+            <a href="#home" data-path="home" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-800/80 text-slate-200 hover:text-white transition text-xs font-semibold">
+              <span>صفحه اصلی</span>
+              <span class="text-[10px] text-slate-500 font-normal">تارنما</span>
+            </a>
+            <a href="#map" data-path="map" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-800/80 text-amber-300 hover:text-white transition text-xs font-semibold">
+              <span>نقشه و راهنمای حسینیه</span>
+              <span class="text-[10px] text-amber-500 font-normal">مسیریابی</span>
+            </a>
+            <a href="#audio-archive" data-path="audio-archive" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-800/80 text-slate-200 hover:text-white transition text-xs font-semibold">
+              <span>آرشیو جامع صوت و نوا</span>
+              <span class="text-[10px] text-amber-400 font-normal">شور، واحد، روضه</span>
+            </a>
+            <a href="#photo-gallery" data-path="photo-gallery" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-800/80 text-slate-200 hover:text-white transition text-xs font-semibold">
+              <span>گالری تصاویر</span>
+              <span class="text-[10px] text-slate-500 font-normal">عکس‌های مراسم</span>
+            </a>
+            <a href="#video-archive" data-path="video-archive" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-800/80 text-slate-200 hover:text-white transition text-xs font-semibold">
+              <span>آرشیو ویدئوها و کلیپها</span>
+              <span class="text-[10px] text-slate-500 font-normal">کلیپ و نماهنگ</span>
+            </a>
+            <a href="#contact-us" data-path="contact-us" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-800/80 text-slate-200 hover:text-white transition text-xs font-semibold">
+              <span>نذورات آنلاین و پرداخت اینترنتی</span>
+              <span class="text-[10px] text-emerald-400 font-normal">اطعام و چایخانه</span>
+            </a>
+            <a href="#sms-preview" data-path="sms-preview" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-800/80 text-slate-200 hover:text-white transition text-xs font-semibold">
+              <span>پیشنمایش قالب پیامکهای رسمی</span>
+              <span class="text-[10px] text-slate-500 font-normal">اطلاع‌رسانی</span>
+            </a>
+            <a href="#admin-dashboard" data-path="admin-dashboard" onclick="closeMobileMenu()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700/60 text-slate-300 hover:text-amber-400 transition text-xs font-semibold mt-2">
+              <span>داشبورد مدیریت هیئت</span>
+              <span class="text-[10px] text-amber-500">پنل ادمین</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Drawer Footer Contact Info -->
+        <div class="p-4 bg-slate-950 border-t border-white/10 text-xs text-slate-400">
+          <div class="flex items-center justify-between mb-1">
+            <span>شماره تماس حسینیه:</span>
+            <a href="tel:02122894510" class="text-slate-200 font-mono dir-ltr">۰۲۱-۲۲۸۹۴۵۱۰</a>
+          </div>
+          <p class="text-[10px] text-slate-500 mt-1">تهران، حسینیه شباب علی ابن الحسین (ع)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN APP SCREENS CONTAINER -->
+    <div id="app-screens">
+
+      <!-- ========================================== -->
+      <!-- SCREEN 1: صفحه اصلی | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-home" class="screen-view active-screen">
+        <!-- Header -->
+        <header class="sticky top-0 z-40 glass-nav">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <!-- 3-Line Hamburger Menu Button at Top Right for Mobile (منوی سه خط بالا سمت راست) -->
+              <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              </button>
+
+              <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-red-900/40 shrink-0">
+                <span class="text-amber-400 font-bold text-lg">ياعلی</span>
+              </div>
+              <div>
+                <h1 class="font-bold text-base md:text-lg text-white leading-tight">هیئت شباب علی ابن الحسین (ع)</h1>
+                <p class="text-[11px] text-amber-400 font-medium">خیمه‌گاه جوانان و عاشقان اهل‌بیت علیهم‌السلام</p>
+              </div>
+            </div>
+
+            <!-- Main Nav -->
+            <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-300">
+              <a href="#ceremonies" data-path="ceremonies" class="hover:text-amber-400 transition py-2">مراسم‌ها</a>
+              <a href="#map" data-path="map" class="hover:text-amber-400 transition py-2 text-amber-300 font-semibold flex items-center gap-1">
+                <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                نقشه حسینیه
+              </a>
+              <a href="#audio-archive" data-path="audio-archive" class="hover:text-amber-400 transition py-2">آرشیو جامع صوت</a>
+              <a href="#photo-gallery" data-path="photo-gallery" class="hover:text-amber-400 transition py-2">گالری تصاویر</a>
+              <a href="#video-archive" data-path="video-archive" class="hover:text-amber-400 transition py-2">آرشیو ویدئوها</a>
+              <a href="#about-us" data-path="about-us" class="hover:text-amber-400 transition py-2">درباره ما</a>
+              <a href="#contact-us" data-path="contact-us" class="hover:text-amber-400 transition py-2">نذورات آنلاین</a>
+              <a href="#volunteer-registration" data-path="volunteer-registration" class="hover:text-amber-400 transition py-2">ثبتنام خادم افتخاری</a>
+            </nav>
+
+            <div class="flex items-center gap-2.5">
+              <a href="#volunteer-registration" data-path="volunteer-registration" class="btn-gold text-xs px-3.5 py-2 hidden sm:inline-flex">
+                پیوستن به خادمین افتخاری / ثبتنام
+              </a>
+              <a href="#admin-dashboard" data-path="admin-dashboard" class="btn-secondary text-xs px-3 py-2 border-slate-700 hover:border-amber-500/50">
+                داشبورد مدیریت
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="relative overflow-hidden py-16 md:py-24 border-b border-white/5">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-950/70 border border-red-700/50 text-red-300 text-xs font-medium mb-6">
+              <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+              پرتال رسمی و خیمه‌گاه مجازی هیئت شباب علی ابن الحسین علیه السلام
+            </div>
+            
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6 tracking-tight">
+              خیمه‌گاه سوگواری، بصیرت و معرفت <br>
+              <span class="gold-gradient-text">شباب علی ابن الحسین (ع)</span>
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+              برگزاری مراسم‌های هفتگی و مناسبتی، انتشار نواهای آیینی، آرشیو مکتوب و چندرسانه‌ای مجالس روضه، ثبت‌نام خادمان افتخاری جوانان و نذورات اطعام.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+              <a href="#ceremonies" class="btn-primary text-sm px-6 py-3">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+                مشاهده مراسمها
+              </a>
+              <a href="#volunteer-registration" class="btn-gold text-sm px-6 py-3">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                پیوستن به خادمین افتخاری / ثبتنام
+              </a>
+              <a href="#about-us" class="btn-secondary text-sm px-5 py-3">
+                درباره ما و منشور هیئت
+              </a>
+            </div>
+
+            <!-- Next Ceremony Countdown Bar -->
+            <div class="max-w-3xl mx-auto glass-panel p-6 border-amber-500/30 shadow-2xl relative">
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="text-right">
+                  <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">مراسم پیش‌رو</span>
+                  <h3 class="text-base sm:text-lg font-bold text-white">مراسم هفتگی توسل به حضرت علی اکبر (ع)</h3>
+                  <p class="text-xs text-slate-400 mt-1">پنج‌شنبه شب • ساعت ۱۹:۳۰ • با سخنرانی استاد حامد کاشانی</p>
+                </div>
+                <div class="flex items-center gap-3 dir-ltr">
+                  <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-center min-w-[60px]">
+                    <span id="cd-hours" class="block font-black text-xl text-amber-400 font-mono">۱۴</span>
+                    <span class="text-[10px] text-slate-400">ساعت</span>
+                  </div>
+                  <span class="text-amber-500 font-bold">:</span>
+                  <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-center min-w-[60px]">
+                    <span id="cd-mins" class="block font-black text-xl text-amber-400 font-mono">۳۰</span>
+                    <span class="text-[10px] text-slate-400">دقیقه</span>
+                  </div>
+                  <span class="text-amber-500 font-bold">:</span>
+                  <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-center min-w-[60px]">
+                    <span id="cd-secs" class="block font-black text-xl text-amber-400 font-mono">۴۵</span>
+                    <span class="text-[10px] text-slate-400">ثانیه</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 1: Ceremonies Spotlight -->
+        <section id="ceremonies-spotlight" class="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+            <div>
+              <div class="text-xs font-bold text-amber-400 mb-1">برنامه جلسات هیئت</div>
+              <h3 class="text-2xl font-black text-white">مراسم‌های شاخص و پیش‌رو</h3>
+            </div>
+            <a href="#ceremonies" class="text-sm font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition">
+              <span>مشاهده تمام مراسمها</span>
+              <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Event Card 1 -->
+            <div class="glass-panel p-6 border-red-900/40 hover:border-amber-500/40 transition group">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-full bg-red-950 text-red-300 border border-red-800/60 text-xs font-medium">مراسم هفتگی</span>
+                <span class="text-xs text-amber-400 font-mono">پنج‌شنبه شب‌ها</span>
+              </div>
+              <h4 class="font-bold text-lg text-white mb-3 group-hover:text-amber-400 transition">توسل به حضرت علی اکبر (ع)</h4>
+              <div class="space-y-2 text-xs text-slate-300 mb-5">
+                <div class="flex items-center gap-2">
+                  <span class="text-slate-400">سخنران:</span>
+                  <span class="font-medium text-white">حجت‌الاسلام استاد حامد کاشانی</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-slate-400">مداح:</span>
+                  <span class="font-medium text-white">کربلایی علی‌اصغر رسولی</span>
+                </div>
+                <div class="flex items-start gap-2 text-slate-400">
+                  <span>مکان:</span>
+                  <span class="text-slate-300">تهران، خ شریعتی، بالاتر از پل رومی، حسینیه شباب الحسین</span>
+                </div>
+              </div>
+              <a href="#ceremonies" class="w-full btn-secondary text-xs py-2 justify-center">
+                اطلاعات کامل و کروکی حسینیه
+              </a>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="glass-panel p-6 border-red-900/40 hover:border-amber-500/40 transition group">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-full bg-amber-950 text-amber-300 border border-amber-800/60 text-xs font-medium">سوگواره فاطمیه</span>
+                <span class="text-xs text-amber-400 font-mono">۳ شب متوالی</span>
+              </div>
+              <h4 class="font-bold text-lg text-white mb-3 group-hover:text-amber-400 transition">اقامه عزای ایام فاطمیه اول</h4>
+              <div class="space-y-2 text-xs text-slate-300 mb-5">
+                <div class="flex items-center gap-2">
+                  <span class="text-slate-400">سخنران:</span>
+                  <span class="font-medium text-white">آیت‌الله سید محمدمهدی میرباقری</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-slate-400">مداح:</span>
+                  <span class="font-medium text-white">حاج مهدی سلحشور و ذاکرین</span>
+                </div>
+                <div class="flex items-start gap-2 text-slate-400">
+                  <span>همراه با:</span>
+                  <span class="text-slate-300">سفره اطعام فاطمی و مهد کودک حسینیه</span>
+                </div>
+              </div>
+              <a href="#ceremonies" class="w-full btn-secondary text-xs py-2 justify-center">
+                اطلاعات کامل و کروکی حسینیه
+              </a>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="glass-panel p-6 border-red-900/40 hover:border-amber-500/40 transition group">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800/60 text-xs font-medium">جشن و سرور</span>
+                <span class="text-xs text-emerald-400 font-mono">ماه شعبان</span>
+              </div>
+              <h4 class="font-bold text-lg text-white mb-3 group-hover:text-amber-400 transition">ولادت امام سجاد و علی اکبر (ع)</h4>
+              <div class="space-y-2 text-xs text-slate-300 mb-5">
+                <div class="flex items-center gap-2">
+                  <span class="text-slate-400">سخنران:</span>
+                  <span class="font-medium text-white">حجت‌الاسلام سید حسین مؤمنی</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-slate-400">مداح:</span>
+                  <span class="font-medium text-white">کربلایی سید رضا نریمانی</span>
+                </div>
+                <div class="flex items-start gap-2 text-slate-400">
+                  <span>برنامه ویژه:</span>
+                  <span class="text-slate-300">قرعه‌کشی ۳ سفر زیارتی عتبات عالیات</span>
+                </div>
+              </div>
+              <a href="#ceremonies" class="w-full btn-secondary text-xs py-2 justify-center">
+                اطلاعات کامل و کروکی حسینیه
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Audio Releases Spotlight -->
+        <section id="audio-releases" class="py-14 bg-slate-900/40 border-y border-white/5">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+              <div>
+                <div class="text-xs font-bold text-amber-400 mb-1">نغمه‌های ولایی و مراثی</div>
+                <h3 class="text-2xl font-black text-white">آرشیو صوتی نواهای اخیر</h3>
+              </div>
+              <a href="#audio-archive" class="text-sm font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition">
+                <span>مشاهده تمام صوتها</span>
+                <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+
+            <div class="space-y-3">
+              <!-- Item 1 -->
+              <div class="glass-panel p-4 flex items-center justify-between gap-4 hover:border-amber-500/40 transition">
+                <div class="flex items-center gap-3">
+                  <button onclick="playAudio(1)" class="w-10 h-10 rounded-lg bg-red-700 hover:bg-red-600 text-white flex items-center justify-center shrink-0 cursor-pointer">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                  <div>
+                    <h5 class="text-sm font-bold text-white hover:text-amber-400 transition cursor-pointer" onclick="playAudio(1)">شور - ای علمدار رشیدم ای علی اکبرم</h5>
+                    <p class="text-xs text-slate-400">کربلایی محمدحسین پویانفر • شب هشتم محرم</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-xs text-slate-400 font-mono">۰۶:۴۵</span>
+                  <button onclick="showLyricsModal(1)" class="text-xs text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20 hover:bg-amber-500/20 cursor-pointer">متن شعر</button>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="glass-panel p-4 flex items-center justify-between gap-4 hover:border-amber-500/40 transition">
+                <div class="flex items-center gap-3">
+                  <button onclick="playAudio(2)" class="w-10 h-10 rounded-lg bg-red-700 hover:bg-red-600 text-white flex items-center justify-center shrink-0 cursor-pointer">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                  <div>
+                    <h5 class="text-sm font-bold text-white hover:text-amber-400 transition cursor-pointer" onclick="playAudio(2)">واحد حماسی - وارث هیبت حیدر شباب الحسین</h5>
+                    <p class="text-xs text-slate-400">حاج میثم مطیعی • میلاد حضرت علی اکبر (ع)</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-xs text-slate-400 font-mono">۰۵:۱۲</span>
+                  <button onclick="showLyricsModal(2)" class="text-xs text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20 hover:bg-amber-500/20 cursor-pointer">متن شعر</button>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="glass-panel p-4 flex items-center justify-between gap-4 hover:border-amber-500/40 transition">
+                <div class="flex items-center gap-3">
+                  <button onclick="playAudio(3)" class="w-10 h-10 rounded-lg bg-red-700 hover:bg-red-600 text-white flex items-center justify-center shrink-0 cursor-pointer">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                  <div>
+                    <h5 class="text-sm font-bold text-white hover:text-amber-400 transition cursor-pointer" onclick="playAudio(3)">زمینه - دلتنگ حرمم ای آرام جان من</h5>
+                    <p class="text-xs text-slate-400">حاج مهدی رسولی • ایام فاطمیه</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-xs text-slate-400 font-mono">۰۸:۳۰</span>
+                  <button onclick="showLyricsModal(3)" class="text-xs text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20 hover:bg-amber-500/20 cursor-pointer">متن شعر</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Media Hub Section (Photos & Videos) -->
+        <section class="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Gallery Card -->
+            <div class="glass-panel p-6 border-slate-700/60 relative overflow-hidden group">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl"></div>
+              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block mb-1">نگارخانه بصری</span>
+              <h4 class="text-xl font-black text-white mb-3">گزارش‌های تصویری مراسم‌ها</h4>
+              <p class="text-xs text-slate-400 mb-6 leading-relaxed">
+                عکس‌های باکیفیت و مستندسازی شده از شور عزاداری جوانان، چایخانه حضرت، موکب اربعین حسینی و برنامه‌های جهادی هیئت.
+              </p>
+              <a href="#photo-gallery" class="btn-secondary text-xs">
+                مشاهده نگارخانه تصاویر
+              </a>
+            </div>
+
+            <!-- Videos Card -->
+            <div class="glass-panel p-6 border-slate-700/60 relative overflow-hidden group">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-2xl"></div>
+              <span class="text-xs font-bold text-red-400 uppercase tracking-wider block mb-1">مرکز چندرسانه‌ای</span>
+              <h4 class="text-xl font-black text-white mb-3">کلیپ‌ها، استوری‌ها و نماهنگ‌ها</h4>
+              <p class="text-xs text-slate-400 mb-6 leading-relaxed">
+                کلیپ‌های تدوین شده برای شبکه‌های اجتماعی، نماهنگ‌های استودیویی، تیزرهای اطلاع‌رسانی و مستند فعالیت‌های فرهنگی خیمه‌گاه.
+              </p>
+              <a href="#video-archive" class="btn-secondary text-xs">
+                مشاهده آرشیو ویدئوها
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-white/10 bg-slate-950/80 py-12">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-right">
+              <a href="#about-us" class="text-base font-bold text-white hover:text-amber-400 transition block mb-1">
+                هیئت شباب علی ابن الحسین (ع)
+              </a>
+              <p class="text-xs text-slate-400">تهران، خیمه‌گاه شباب علی ابن الحسین علیه السلام • تلفن ارتباطی: ۰۲۱۲۲۸۹۴۵۱۰</p>
+            </div>
+            <div class="flex items-center gap-4 text-xs text-slate-400">
+              <a href="#about-us" class="hover:text-amber-400 transition">درباره ما و منشور هیئت</a>
+              <span>•</span>
+              <a href="#contact-us" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+              <span>•</span>
+              <a href="#volunteer-registration" class="hover:text-amber-400 transition">ثبت‌نام خادمان</a>
+            </div>
+          </div>
+        </footer>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 2: افزودن صوت جدید | پنل مدیریت هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-add-audio" class="screen-view">
+        <div class="min-h-screen bg-[#0d1017] flex flex-col">
+          <!-- Admin Header Bar -->
+          <header class="glass-nav px-4 sm:px-8 py-4 border-b border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <aside>
+                <a href="#home" data-path="home" class="btn-secondary text-xs px-3 py-1.5 flex items-center gap-1">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                  صفحه اصلی سایت
+                </a>
+              </aside>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <a href="#admin-dashboard" class="hover:text-amber-400 transition text-slate-300 font-semibold">پیشخوان</a>
+                <span>/</span>
+                <span class="text-amber-400">افزودن قطعه صوتی تازه</span>
+              </div>
+            </div>
+
+            <!-- Admin nav -->
+            <nav class="flex items-center gap-4 text-xs font-medium text-slate-300">
+              <a href="#admin-dashboard" data-path="admin-dashboard" class="hover:text-amber-400 transition">داشبورد</a>
+              <a href="#ceremonies" data-path="admin-events" class="hover:text-amber-400 transition">مراسم‌ها</a>
+              <a href="#sms-preview" data-path="admin-subscribers" class="hover:text-amber-400 transition">سامانه پیامک</a>
+            </nav>
+          </header>
+
+          <!-- Form Content -->
+          <div class="max-w-4xl mx-auto w-full px-4 py-8 flex-1">
+            <div class="glass-panel p-6 sm:p-8 border-amber-500/20 shadow-xl">
+              <div class="border-b border-white/10 pb-4 mb-6">
+                <h2 class="text-xl font-black text-white mb-1">افزودن صوت جدید به آرشیو هیئت</h2>
+                <p class="text-xs text-slate-400">مشخصات قطعه صوتی مداحی، سخنرانی یا روضه را با دقت ثبت و بارگذاری فرمایید.</p>
+              </div>
+
+              <form onsubmit="handleAddAudioSubmit(event)" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-2">عنوان قطعه و سبک مداحی *</label>
+                    <input type="text" name="title" required placeholder="مثال: شور - ای علمدار رشیدم ای علی اکبرم" class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-2">نام ذاکر / سخنران *</label>
+                    <input type="text" name="eulogist" required placeholder="مثال: کربلایی محمدحسین پویانفر" class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-2">دسته‌بندی اثر</label>
+                    <select name="category" class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                      <option value="شور">شور</option>
+                      <option value="واحد">واحد</option>
+                      <option value="زمینه">زمینه</option>
+                      <option value="روضه">روضه و مقتل</option>
+                      <option value="مناجات">مناجات و دعا</option>
+                      <option value="سخنرانی">سخنرانی مذهبی</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-2">مناسبت و زمان اجرا</label>
+                    <input type="text" name="occasion" placeholder="مثال: شب هشتم محرم ۱۴۴۶" class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-2">مدت زمان (دقیقه:ثانیه)</label>
+                    <input type="text" name="duration" placeholder="۰۶:۴۵" class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                  </div>
+                </div>
+
+                <!-- Fake File Upload Box -->
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">انتخاب فایل صوتی (MP3 / WAV)</label>
+                  <div class="border-2 border-dashed border-slate-700 hover:border-amber-500/50 rounded-2xl p-6 text-center cursor-pointer transition bg-slate-900/40">
+                    <svg class="w-10 h-10 mx-auto text-amber-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                    <span class="text-xs text-slate-300 block font-medium">فایل صوتی با حداکثر حجم ۵۰ مگابایت</span>
+                    <span class="text-[11px] text-slate-500 mt-1 block">فایل نمونه پیش‌فرض صوتی تنظیم گردیده است</span>
+                  </div>
+                </div>
+
+                <!-- Lyrics Field -->
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">متن اشعار، بندها و گریز مداحی</label>
+                  <textarea name="lyrics" rows="5" placeholder="بند اول نوحه، اشعار سینه زنی و مرثیه..." class="w-full bg-slate-900/90 border border-slate-700 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+
+                <!-- Form Controls -->
+                <div class="flex items-center justify-end gap-3 pt-4 border-t border-white/10">
+                  <button type="button" class="btn-secondary text-xs px-5 py-2.5">
+                    انصراف و بازگشت
+                  </button>
+                  <button type="submit" class="btn-primary text-xs px-6 py-2.5">
+                    انتشار قطعی صوت در آرشیو
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 3: آرشیو جامع صوت | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-audio-archive" class="screen-view">
+        <!-- Header -->
+        <header class="glass-nav sticky top-0 z-40">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+              <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              </button>
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shrink-0">
+                <span class="text-amber-400 font-bold">صوت</span>
+              </div>
+              <h2 class="font-bold text-white text-base md:text-lg">آرشیو جامع صوت و نغمه‌های آیینی</h2>
+            </div>
+
+            <!-- Nav -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+              <a href="#home" data-path="home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+              <a href="#ceremonies" data-path="ceremonies" class="hover:text-amber-400 transition">مراسم‌ها</a>
+              <a href="#photo-gallery" data-path="photo-gallery" class="hover:text-amber-400 transition">گالری تصاویر</a>
+              <a href="#video-archive" data-path="video-archive" class="hover:text-amber-400 transition">ویدئوها</a>
+              <a href="#about-us" data-path="about-us" class="hover:text-amber-400 transition">درباره ما</a>
+              <a href="#contact-us" data-path="contact-us" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+            </nav>
+
+            <a href="#admin-dashboard" data-path="admin-dashboard" class="btn-secondary text-xs px-3 py-2">
+              داشبورد مدیریت
+            </a>
+          </div>
+        </header>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <!-- Search & Filter Controls -->
+          <div class="glass-panel p-6 mb-8 border-slate-700/60 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="renderAudioArchive('all')" class="text-xs px-3.5 py-1.5 rounded-lg bg-red-600 text-white font-medium hover:bg-red-500 transition cursor-pointer">همه قطعات</button>
+              <button onclick="renderAudioArchive('شور')" class="text-xs px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">شور</button>
+              <button onclick="renderAudioArchive('واحد')" class="text-xs px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">واحد</button>
+              <button onclick="renderAudioArchive('زمینه')" class="text-xs px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">زمینه</button>
+              <button onclick="renderAudioArchive('روضه')" class="text-xs px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">روضه و مقتل</button>
+              <button onclick="renderAudioArchive('مناجات')" class="text-xs px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">مناجات</button>
+            </div>
+            <div class="w-full md:w-72">
+              <input type="text" oninput="renderAudioArchive('all', this.value)" placeholder="جستجو بر اساس نام مداح، سبک، مناسبت..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-amber-500">
+            </div>
+          </div>
+
+          <!-- Dynamic Audio List Container -->
+          <div id="audio-archive-list" class="space-y-4">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 4: درباره ما | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-about-us" class="screen-view">
+        <!-- Header -->
+        <header class="glass-nav sticky top-0 z-40">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+              <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              </button>
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shrink-0">
+                <span class="text-amber-400 font-bold">منشور</span>
+              </div>
+              <h2 class="font-bold text-white text-base md:text-lg">درباره ما و تاریخچه هیئت</h2>
+            </div>
+
+            <!-- Nav -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+              <a href="#home" data-path="home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+              <a href="#ceremonies" data-path="events" class="hover:text-amber-400 transition">مراسم‌ها</a>
+              <a href="#audio-archive" data-path="audio" class="hover:text-amber-400 transition">آرشیو صوت</a>
+              <a href="#photo-gallery" data-path="gallery" class="hover:text-amber-400 transition">گالری تصاویر</a>
+              <a href="#video-archive" data-path="videos" class="hover:text-amber-400 transition">ویدئوها</a>
+              <a href="#contact-us" data-path="contact" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+            </nav>
+
+            <a href="#admin-dashboard" data-path="admin" class="btn-secondary text-xs px-3 py-2">
+              داشبورد مدیریت
+            </a>
+          </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+          <nav aria-label="راهنمای مسیر" class="flex items-center gap-2 text-xs text-slate-400">
+            <a href="#home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+            <span>/</span>
+            <span class="text-amber-400 font-medium">درباره هیئت شباب علی ابن الحسین (ع)</span>
+          </nav>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div class="glass-panel p-8 sm:p-12 mb-10 border-red-900/30 shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-12 -left-12 w-64 h-64 bg-red-600/10 rounded-full blur-3xl"></div>
+            
+            <h3 class="text-2xl sm:text-3xl font-black text-white mb-6">
+              منشور معرفتی و رسالت فرهنگی <span class="gold-gradient-text">هیئت شباب علی ابن الحسین (ع)</span>
+            </h3>
+
+            <div class="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-5">
+              <p>
+                هیئت شباب علی ابن الحسین (علیه‌السلام) با تمسک به سیره نورانی حضرت علی‌اکبر (ع) و امام سجاد (ع)، از سال ۱۳۹۴ با همت جمعی از نخبگان و جوانان پرشور در پایتخت پایه‌گذاری گردید. هدف بنیادین این خیمه‌گاه، تلفیق شور حسینی با معرفت‌افزایی دینی، تربیت نیروی جوان تراز انقلاب اسلامی و گره‌گشایی از نیازمندان در قالب خیریه متصل به هیئت است.
+              </p>
+              <p>
+                جلسات هفتگی این هیئت در شب‌های جمعه با حضور پرشور هزاران تن از مستمعین جوان، نخبگان دانشگاهی و خانواده‌های معظم شهدا اقامه می‌شود و مباحث تربیتی صحیفه سجادیه و مقتل‌شناسی تحلیلی در زمره ارکان ثابت برنامه‌ها می‌باشد.
+              </p>
+            </div>
+
+            <!-- Core Pillars -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 pt-8 border-t border-white/10">
+              <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-700/50">
+                <div class="text-amber-400 font-bold text-lg mb-2">۱. خیمه‌گاه معرفت</div>
+                <p class="text-xs text-slate-400 leading-relaxed">جلسات منظم اندیشه‌ورزی، مباحث اخلاقی و بصیرت‌افزایی مبتنی بر آموزه‌های مکتب عاشورا.</p>
+              </div>
+              <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-700/50">
+                <div class="text-amber-400 font-bold text-lg mb-2">۲. مهد خادمان جوان</div>
+                <p class="text-xs text-slate-400 leading-relaxed">بسترسازی برای خدمت بیش از ۳۵۰ خادم افتخاری در کارگروه‌های تخصصی صوت، رسانه، تدارکات و فرهنگی.</p>
+              </div>
+              <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-700/50">
+                <div class="text-amber-400 font-bold text-lg mb-2">۳. پویش‌های جهادی و اطعام</div>
+                <p class="text-xs text-slate-400 leading-relaxed">طبخ بیش از ۱۰,۰۰۰ پرس غذای گرم در مناسبت‌ها و توزیع بسته‌های معیشتی میان مناطق کم‌برخوردار.</p>
+              </div>
+            </div>
+
+            <div class="mt-10 flex flex-wrap items-center gap-4">
+              <a href="#volunteer-registration" class="btn-primary text-sm px-6 py-3">
+                ثبتنام خادم افتخاری
+              </a>
+              <a href="#contact-us" class="btn-gold text-sm px-6 py-3">
+                مشارکت در نذورات و اطعام
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 5: مراسمهای هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-ceremonies" class="screen-view">
+        <!-- Header -->
+        <header class="glass-nav sticky top-0 z-40">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+              <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              </button>
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shrink-0">
+                <span class="text-amber-400 font-bold">جلسات</span>
+              </div>
+              <h2 class="font-bold text-white text-base md:text-lg">برنامه مراسمهای هیئت شباب علی ابن الحسین (ع)</h2>
+            </div>
+
+            <!-- Nav -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+              <a href="#home" data-path="home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+              <a href="#audio-archive" data-path="audio" class="hover:text-amber-400 transition">آرشیو صوت</a>
+              <a href="#photo-gallery" data-path="gallery" class="hover:text-amber-400 transition">گالری تصاویر</a>
+              <a href="#video-archive" data-path="videos" class="hover:text-amber-400 transition">ویدئوها</a>
+              <a href="#about-us" data-path="about" class="hover:text-amber-400 transition">درباره ما</a>
+              <a href="#contact-us" data-path="contact" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+            </nav>
+
+            <a href="#admin-dashboard" data-path="admin" class="btn-secondary text-xs px-3 py-2">
+              داشبورد مدیریت
+            </a>
+          </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+          <nav aria-label="راهنمای مسیر" class="flex items-center gap-2 text-xs text-slate-400">
+            <a href="#home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+            <span>/</span>
+            <span class="text-amber-400 font-medium">مراسمهای هیئت شباب علی ابن الحسین (ع)</span>
+          </nav>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div class="space-y-6">
+            <!-- Event 1 -->
+            <div class="glass-panel p-6 sm:p-8 border-red-900/40 hover:border-amber-500/40 transition">
+              <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <div>
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full bg-red-900/80 text-red-200 text-xs font-bold border border-red-700">مراسم هفتگی پیش‌رو</span>
+                    <span class="text-xs text-amber-400 font-semibold">پنج‌شنبه ۱۰ آبان ۱۴۰۳ • ساعت ۱۹:۳۰</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-bold text-white mb-4">مراسم هفتگی توسل به ساحت مقدس حضرت علی اکبر (ع)</h3>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
+                    <p><strong class="text-slate-400">سخنران:</strong> حجت‌الاسلام والمسلمین استاد حامد کاشانی (موضوع: سیره تربیتی جوانان اهل‌بیت)</p>
+                    <p><strong class="text-slate-400">مداح:</strong> کربلایی علی‌اصغر رسولی و ذاکرین اهل‌بیت</p>
+                    <p><strong class="text-slate-400">مکان:</strong> تهران، شریعتی، بالاتر از پل رومی، حسینیه مرکزی شباب الحسین (ع)</p>
+                    <p><strong class="text-slate-400">امکانات:</strong> پخش زنده صوت و تصویر، مهد کودک حسینیه، پارکینگ اختصاصی</p>
+                  </div>
+                </div>
+                <div class="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
+                  <button onclick="alert('حضور شما در این مراسم با موفقیت ثبت شد. التماس دعا!')" class="btn-primary text-xs px-5 py-2.5 cursor-pointer">
+                    ثبت حضور در مراسم
+                  </button>
+                  <button onclick="navigateTo('screen-map')" class="btn-secondary text-xs px-5 py-2.5 cursor-pointer">
+                    مسیریابی روی نقشه
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="glass-panel p-6 sm:p-8 border-slate-700/50">
+              <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <div>
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-bold border border-slate-700">ویژه برنامه</span>
+                    <span class="text-xs text-amber-400 font-semibold">جمعه ۱۸ آبان لغایت یکشنبه ۲۰ آبان</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-bold text-white mb-4">سوگواره ایام فاطمیه اول ۱۴۴۶</h3>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
+                    <p><strong class="text-slate-400">سخنران:</strong> آیت‌الله سید محمدمهدی میرباقری</p>
+                    <p><strong class="text-slate-400">مداح:</strong> حاج مهدی سلحشور و حاج حیدر خمسه</p>
+                    <p><strong class="text-slate-400">مکان:</strong> تهران، حسینیه مرکزی شباب علی ابن الحسین (ع)</p>
+                    <p><strong class="text-slate-400">پذیرایی:</strong> سفره تبرکی اطعام فاطمی در پایان مراسم</p>
+                  </div>
+                </div>
+                <div class="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
+                  <button onclick="alert('اطلاعات مراسم به تقویم شما اضافه شد.')" class="btn-secondary text-xs px-5 py-2.5 cursor-pointer">
+                    افزودن به تقویم
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 6: گالری تصاویر | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-photo-gallery" class="screen-view">
+        <!-- Header -->
+        <header class="glass-nav sticky top-0 z-40">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+              <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              </button>
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shrink-0">
+                <span class="text-amber-400 font-bold">عکس</span>
+              </div>
+              <h2 class="font-bold text-white text-base md:text-lg">گالری تصاویر هیئت شباب علی ابن الحسین (ع)</h2>
+            </div>
+
+            <!-- Nav -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+              <a href="#home" data-path="home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+              <a href="#ceremonies" data-path="events" class="hover:text-amber-400 transition">مراسم‌ها</a>
+              <a href="#audio-archive" data-path="audio" class="hover:text-amber-400 transition">آرشیو صوت</a>
+              <a href="#video-archive" data-path="videos" class="hover:text-amber-400 transition">ویدئوها</a>
+              <a href="#about-us" data-path="about" class="hover:text-amber-400 transition">درباره ما</a>
+              <a href="#contact-us" data-path="contact" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+            </nav>
+
+            <a href="#admin-dashboard" data-path="admin" class="btn-secondary text-xs px-3 py-2">
+              داشبورد مدیریت
+            </a>
+          </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+          <nav aria-label="مسیر راهنما" class="flex items-center gap-2 text-xs text-slate-400">
+            <a href="#home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+            <span>/</span>
+            <span class="text-amber-400 font-medium">گالری تصاویر مراسم‌ها</span>
+          </nav>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <!-- Action Bar -->
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 glass-panel p-4 sm:p-5 border-amber-500/30">
+            <div>
+              <h3 class="text-base font-bold text-white flex items-center gap-2">
+                <span>نگارخانه و قاب خاطرات حسینیه</span>
+                <span id="photo-count-badge" class="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-xs font-normal border border-amber-500/30">۳ گزارش تصویری فعال</span>
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">تصاویر مراسمات هفتگی، موکب اربعین، ایستگاه صلواتی، جهادی و فضاسازی حسینیه</p>
+            </div>
+            <button type="button" onclick="openAddPhotoModal()" class="btn-gold text-xs px-4 py-2.5 cursor-pointer flex items-center gap-2 shrink-0">
+              <svg class="w-4 h-4 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <span>افزودن تصویر جدید</span>
+            </button>
+          </div>
+
+          <div id="photo-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic items rendered by renderPhotoGallery() -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 7: آرشیو ویدئوها و کلیپها | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-video-archive" class="screen-view">
+        <!-- Header -->
+        <header class="glass-nav sticky top-0 z-40">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+              <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+                <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              </button>
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shrink-0">
+                <span class="text-amber-400 font-bold">فیلم</span>
+              </div>
+              <h2 class="font-bold text-white text-base md:text-lg">آرشیو ویدئوها و کلیپهای هیئت</h2>
+            </div>
+
+            <!-- Nav -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+              <a href="#home" data-path="home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+              <a href="#ceremonies" data-path="ceremonies" class="hover:text-amber-400 transition">مراسم‌ها</a>
+              <a href="#audio-archive" data-path="audio-archive" class="hover:text-amber-400 transition">آرشیو صوت</a>
+              <a href="#photo-gallery" data-path="photo-gallery" class="hover:text-amber-400 transition">گالری تصاویر</a>
+              <a href="#about-us" data-path="about-us" class="hover:text-amber-400 transition">درباره ما</a>
+              <a href="#contact-us" data-path="contact-us" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+            </nav>
+
+            <a href="#admin-dashboard" data-path="admin-dashboard" class="btn-secondary text-xs px-3 py-2">
+              داشبورد مدیریت
+            </a>
+          </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+          <nav aria-label="مسیر راهنما" class="flex items-center gap-2 text-xs text-slate-400">
+            <a href="#home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+            <span>/</span>
+            <span class="text-amber-400 font-medium">آرشیو ویدئوها و کلیپها</span>
+          </nav>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <!-- Cross Links -->
+          <div class="glass-panel p-4 mb-6 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-slate-300">
+            <a href="#photo-gallery" class="hover:text-amber-400 transition">نگارخانه تصاویر</a>
+            <span>•</span>
+            <a href="#audio-archive" class="hover:text-amber-400 transition">آرشیو صوت و نوا</a>
+            <span>•</span>
+            <a href="#ceremonies" class="hover:text-amber-400 transition">برنامه مراسمها</a>
+            <span>•</span>
+            <a href="#about-us" class="hover:text-amber-400 transition">درباره خیمهگاه</a>
+          </div>
+
+          <!-- Action Bar -->
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 glass-panel p-4 sm:p-5 border-red-900/40">
+            <div>
+              <h3 class="text-base font-bold text-white flex items-center gap-2">
+                <span>آرشیو جامع ویدئوها و نماهنگ‌ها</span>
+                <span id="video-count-badge" class="px-2.5 py-0.5 rounded-full bg-red-900/40 text-red-300 text-xs font-normal border border-red-700/50">۳ ویدیو و کلیپ فعال</span>
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">کلیپ‌های اختصاصی، پخش سخنرانی‌ها، تیزر مراسمات و مستندهای جهادی هیئت</p>
+            </div>
+            <button type="button" onclick="openAddVideoModal()" class="btn-primary text-xs px-4 py-2.5 cursor-pointer flex items-center gap-2 shrink-0">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>افزودن ویدیو جدید</span>
+            </button>
+          </div>
+
+          <div id="video-archive-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Dynamic items rendered by renderVideoArchive() -->
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="border-t border-white/10 bg-slate-950/80 py-8 text-center">
+          <a href="#about-us" class="text-sm font-bold text-white hover:text-amber-400 transition">
+            هیئت شباب علی ابن الحسین (ع)
+          </a>
+        </footer>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 8: ثبتنام خادم افتخاری | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-volunteer-registration" class="screen-view">
+        <header class="glass-nav px-4 sm:px-8 py-4 border-b border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+            <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+            </button>
+            <a href="#home" data-path="home" class="btn-secondary text-xs px-3 py-1.5 flex items-center gap-1">
+              صفحه اصلی
+            </a>
+            <h2 class="font-bold text-white text-sm sm:text-base">ثبتنام خادم افتخاری هیئت</h2>
+          </div>
+
+          <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
+            <a href="#ceremonies" data-path="events" class="hover:text-amber-400 transition">مراسم‌ها</a>
+            <a href="#audio-archive" data-path="audio-archive" class="hover:text-amber-400 transition">آرشیو صوت</a>
+            <a href="#photo-gallery" data-path="gallery" class="hover:text-amber-400 transition">گالری تصاویر</a>
+            <a href="#video-archive" data-path="videos" class="hover:text-amber-400 transition">ویدئوها</a>
+            <a href="#about-us" data-path="about" class="hover:text-amber-400 transition">درباره ما</a>
+            <a href="#contact-us" data-path="contact" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+          </nav>
+
+          <a href="#admin-dashboard" data-path="admin-portal" class="btn-secondary text-xs px-3 py-2">
+            داشبورد مدیریت
+          </a>
+        </header>
+
+        <div class="max-w-3xl mx-auto px-4 py-10">
+          <div class="glass-panel p-6 sm:p-10 border-amber-500/30 shadow-2xl">
+            <div class="text-center max-w-lg mx-auto mb-8">
+              <span class="px-3 py-1 rounded-full bg-amber-950 text-amber-300 border border-amber-800 text-xs font-semibold">پویش خادمی جوانان</span>
+              <h3 class="text-2xl font-black text-white mt-3 mb-2">ثبت‌نام در جمع خادمان افتخاری</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                خدمت به دستگاه با برکت اهل‌بیت علیهم‌السلام توفیقی بزرگ و افتخاری جاودانه است. لطفا اطلاعات زیر را تکمیل نمایید.
+              </p>
+            </div>
+
+            <form onsubmit="handleVolunteerSubmit(event)" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">نام و نام خانوادگی *</label>
+                  <input type="text" name="fullname" required placeholder="مثال: علی رضایی" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">کد ملی *</label>
+                  <input type="text" name="national_code" required placeholder="۰۰۱۲۳۴۵۶۷۸" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">شماره تلفن همراه *</label>
+                  <input type="tel" name="phone" required placeholder="۰۹۱۲۳۴۵۶۷۸۹" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">کارگروه مورد علاقه جهت خدمت</label>
+                  <select name="workgroup" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                    <option value="صوت و صدابرداری">صوت و تجهیزات صدابرداری</option>
+                    <option value="رسانه و عکاسی">رسانه، عکاسی و تصویربرداری</option>
+                    <option value="طراحی گرافیک و تدوین">طراحی گرافیک، بنر و تدوین کلیپ</option>
+                    <option value="چایخانه و اطعام">چایخانه حضرت، تدارکات و سفره اطعام</option>
+                    <option value="انتظامات و راهنمایی">انتظامات و هدایت مستمعین</option>
+                    <option value="فرهنگی و کودک">کارگروه مهد کودک و برنامه‌های فرهنگی</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">سوابق یا مهارت‌های تخصصی (اختیاری)</label>
+                <textarea name="experience" rows="3" placeholder="مهارت‌های فنی، سابقه فعالیت در هیئات مذهبی..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full btn-gold text-sm py-3 justify-center shadow-lg cursor-pointer">
+                ثبت قطعی درخواست خادمی و صدور کارت دیجیتال
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 9: نذورات آنلاین و پرداخت اینترنتی | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-contact-us" class="screen-view">
+        <header class="glass-nav px-4 sm:px-8 py-4 border-b border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+            <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+            </button>
+            <a href="#home" data-path="home" class="btn-secondary text-xs px-3 py-1.5 flex items-center gap-1">
+              صفحه اصلی
+            </a>
+            <h2 class="font-bold text-white text-sm sm:text-base">نذورات آنلاین و پرداخت اینترنتی</h2>
+          </div>
+
+          <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
+            <a href="#ceremonies" data-path="events" class="hover:text-amber-400 transition">مراسم‌ها</a>
+            <a href="#audio-archive" data-path="audio-archive" class="hover:text-amber-400 transition">آرشیو صوت</a>
+            <a href="#photo-gallery" data-path="gallery" class="hover:text-amber-400 transition">گالری تصاویر</a>
+            <a href="#video-archive" data-path="videos" class="hover:text-amber-400 transition">ویدئوها</a>
+            <a href="#about-us" data-path="about" class="hover:text-amber-400 transition">درباره ما</a>
+          </nav>
+
+          <a href="#admin-dashboard" data-path="admin-portal" class="btn-secondary text-xs px-3 py-2">
+            داشبورد مدیریت
+          </a>
+        </header>
+
+        <div class="max-w-3xl mx-auto px-4 py-10">
+          <div class="glass-panel p-6 sm:p-10 border-red-900/40 shadow-2xl">
+            <div class="text-center max-w-lg mx-auto mb-8">
+              <span class="px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800 text-xs font-semibold">بخش نذورات و خیرات</span>
+              <h3 class="text-2xl font-black text-white mt-3 mb-2">پرداخت نذورات و مشارکت در مجالس اهل‌بیت (ع)</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                تمامی وجوه واریزی با نظارت هیئت امنا صرفاً در سرفصل‌های مشخص شده و اطعام عزاداران مصرف می‌گردد.
+              </p>
+            </div>
+
+            <form onsubmit="handleDonationSubmit(event)" class="space-y-6">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">نیت و سرفصل نذر متبرک</label>
+                <select name="intention" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                  <option value="اطعام عزاداران و سفره اهل‌بیت (ع)">اطعام عزاداران و سفره اهل‌بیت (ع)</option>
+                  <option value="چایخانه حضرت علی‌اکبر (ع)">چایخانه حضرت علی‌اکبر (ع) و قند و چای</option>
+                  <option value="بسته‌های معیشتی نیازمندان">بسته‌های معیشتی و خیرات برای نیازمندان</option>
+                  <option value="تجهیزات فنی و صوتی حسینیه">تجهیزات فنی، نور و سیستم صوتی حسینیه</option>
+                  <option value="نذر عام هیئت">نذر عام و هزینه‌های جاری هیئت</option>
+                </select>
+              </div>
+
+              <!-- Preset Amount Buttons -->
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">انتخاب مبلغ نذر (تومان)</label>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-3">
+                  <button type="button" onclick="document.getElementById('donation-amount').value = 50000" class="btn-secondary text-xs py-2">۵۰,۰۰۰ تومان</button>
+                  <button type="button" onclick="document.getElementById('donation-amount').value = 100000" class="btn-secondary text-xs py-2">۱۰۰,۰۰۰ تومان</button>
+                  <button type="button" onclick="document.getElementById('donation-amount').value = 250000" class="btn-secondary text-xs py-2">۲۵۰,۰۰۰ تومان</button>
+                  <button type="button" onclick="document.getElementById('donation-amount').value = 500000" class="btn-secondary text-xs py-2">۵۰۰,۰۰۰ تومان</button>
+                </div>
+                <input type="number" id="donation-amount" name="amount" required min="10000" placeholder="یا مبلغ دلخواه را وارد کنید (حداقل ۱۰,۰۰۰ تومان)" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">نام بانی خیر (اختیاری)</label>
+                  <input type="text" name="donor_name" placeholder="مثال: بانی خیر / نذر اموات" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">شماره همراه (جهت دریافت پیامک رسید)</label>
+                  <input type="tel" name="donor_phone" placeholder="۰۹۱۲۳۴۵۶۷۸۹" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+              </div>
+
+              <button type="submit" class="w-full btn-primary text-sm py-3 justify-center shadow-lg cursor-pointer">
+                اتصال به درگاه پرداخت شاپرک و پرداخت نذر
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 10: پیشنمایش قالب پیامکهای رسمی | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-sms-preview" class="screen-view">
+        <header class="glass-nav px-4 sm:px-8 py-4 border-b border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+            <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+            </button>
+            <a href="#home" data-path="home" class="btn-secondary text-xs px-3 py-1.5 flex items-center gap-1">
+              صفحه اصلی
+            </a>
+            <h2 class="font-bold text-white text-sm sm:text-base">سامانه پیامک و پیش‌نمایش قالب‌ها</h2>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <a href="#contact-us" class="text-xs font-semibold text-amber-400 hover:text-amber-300 transition">
+              صفحه پرداخت نذورات
+            </a>
+            <a href="#admin-dashboard" data-path="admin-portal" class="btn-secondary text-xs px-3 py-2">
+              داشبورد مدیریت
+            </a>
+          </div>
+        </header>
+
+        <div class="max-w-5xl mx-auto px-4 py-10">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <h3 class="text-xl font-bold text-white">پیشنمایش قالب پیامکهای رسمی هیئت</h3>
+              <p class="text-xs text-slate-400">قالب‌های استاندارد پیامکی ارسالی برای مستمعین، خیرین و خادمان</p>
+            </div>
+            <a href="#home" class="btn-secondary text-xs px-4 py-2">
+              بازگشت به پرتال اصلی
+            </a>
+          </div>
+
+          <!-- Secondary nav for xpath matching -->
+          <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-400 mb-8 border-b border-white/5 pb-3">
+            <a href="#ceremonies" data-path="events" class="hover:text-amber-400 transition">مراسم‌ها</a>
+            <a href="#audio-archive" data-path="audio-archive" class="hover:text-amber-400 transition">آرشیو صوت</a>
+            <a href="#photo-gallery" data-path="gallery" class="hover:text-amber-400 transition">گالری تصاویر</a>
+            <a href="#video-archive" data-path="videos" class="hover:text-amber-400 transition">ویدئوها</a>
+            <a href="#about-us" data-path="about" class="hover:text-amber-400 transition">درباره ما</a>
+            <a href="#contact-us" data-path="contact" class="hover:text-amber-400 transition">نذورات آنلاین</a>
+          </nav>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Controls -->
+            <div class="glass-panel p-6 border-slate-700/60 space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">انتخاب قالب پیامکی</label>
+                <select id="sms-template-select" onchange="updateSmsPreview()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                  <option value="ceremony">اعلام برنامه مراسم هفتگی</option>
+                  <option value="donation">رسید و تشکر بابت نذورات آنلاین</option>
+                  <option value="volunteer">تأیید عضویت خادم افتخاری</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">نام سخنران / متغیر اول</label>
+                <input type="text" id="sms-speaker-input" oninput="updateSmsPreview()" value="استاد حامد کاشانی" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2 text-xs text-white">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">نام مداح / متغیر دوم</label>
+                <input type="text" id="sms-eulogist-input" oninput="updateSmsPreview()" value="کربلایی محمدحسین پویانفر" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2 text-xs text-white">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">زمان مراسم</label>
+                <input type="text" id="sms-time-input" oninput="updateSmsPreview()" value="پنج‌شنبه ساعت ۱۹:۳۰" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2 text-xs text-white">
+              </div>
+
+              <button onclick="alert('پیامک آزمایشی به شماره مدیر سامانه ارسال گردید.')" class="w-full btn-gold text-xs py-2.5 justify-center cursor-pointer">
+                ارسال پیامک آزمایشی (تست)
+              </button>
+            </div>
+
+            <!-- Phone Mockup Preview -->
+            <div class="bg-slate-900 border-4 border-slate-700 rounded-3xl p-6 shadow-2xl relative max-w-sm mx-auto w-full">
+              <div class="w-20 h-4 bg-slate-700 rounded-full mx-auto mb-6"></div>
+              <div class="text-center pb-3 border-b border-slate-800 mb-4">
+                <span class="text-xs font-bold text-white block">SHABAB-ALI</span>
+                <span class="text-[10px] text-slate-500">سرشماره پیامکی اختصاصی هیئت</span>
+              </div>
+
+              <div class="bg-slate-800/80 rounded-2xl p-4 border border-slate-700/60 shadow-inner mb-4">
+                <p id="sms-screen-text" class="text-xs text-slate-200 leading-relaxed whitespace-pre-line font-mono"></p>
+              </div>
+
+              <div class="flex items-center justify-between text-[11px] text-slate-400">
+                <span id="sms-char-counter">۱۴۲ کاراکتر (۲ پیامک)</span>
+                <span class="text-emerald-400 font-semibold">قالب تأیید شده اپراتور</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 11: داشبورد مدیریت | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-admin-dashboard" class="screen-view">
+        <header class="glass-nav px-4 sm:px-8 py-4 border-b border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+            <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+            </button>
+            <aside>
+              <a href="#home" data-path="home" class="btn-secondary text-xs px-3 py-1.5 flex items-center gap-1">
+                صفحه اصلی
+              </a>
+            </aside>
+            <a href="#home" class="text-xs text-amber-400 font-semibold hover:text-amber-300 transition">
+              مشاهده تارنما
+            </a>
+          </div>
+
+          <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+            <button class="btn-primary text-xs px-3.5 py-2 cursor-pointer">
+              افزودن صوت جدید
+            </button>
+            <button class="btn-gold text-xs px-3.5 py-2 cursor-pointer">
+              ثبت مراسم تازه
+            </button>
+            <button type="button" onclick="openAddVideoModal()" class="bg-red-800 hover:bg-red-700 text-white font-bold text-xs px-3.5 py-2 rounded-xl transition cursor-pointer flex items-center gap-1.5 border border-red-500/40 shadow-sm">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>افزودن ویدیو جدید</span>
+            </button>
+            <button type="button" onclick="openAddPhotoModal()" class="bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-xs px-3.5 py-2 rounded-xl transition cursor-pointer flex items-center gap-1.5 border border-amber-400 shadow-sm">
+              <svg class="w-4 h-4 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <span>افزودن تصویر جدید</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <!-- Quick Nav -->
+          <nav class="flex items-center gap-4 text-xs font-semibold text-slate-400 mb-6 border-b border-white/5 pb-3">
+            <a href="#ceremonies" data-path="admin-events" class="hover:text-amber-400 transition">مراسم‌ها</a>
+            <a href="#add-audio" data-path="admin-media" class="hover:text-amber-400 transition">افزودن صوت</a>
+            <a href="#sms-preview" data-path="admin-subscribers" class="hover:text-amber-400 transition">سامانه پیامک</a>
+          </nav>
+
+          <!-- Stat Cards -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+            <div class="glass-panel p-4 border-slate-700/60">
+              <span class="text-xs text-slate-400">قطعات صوتی</span>
+              <div id="stat-audio-count" class="text-xl font-black text-amber-400 mt-2">۵</div>
+              <span class="text-[10px] text-slate-500">نواهای منتشر شده</span>
+            </div>
+
+            <div class="glass-panel p-4 border-red-900/40">
+              <span class="text-xs text-slate-400">ویدئوها و کلیپ‌ها</span>
+              <div id="stat-video-count" class="text-xl font-black text-red-400 mt-2">۳</div>
+              <span class="text-[10px] text-slate-500">نماهنگ و مستند</span>
+            </div>
+
+            <div class="glass-panel p-4 border-amber-500/30">
+              <span class="text-xs text-slate-400">تصاویر نگارخانه</span>
+              <div id="stat-photo-count" class="text-xl font-black text-amber-300 mt-2">۳</div>
+              <span class="text-[10px] text-slate-500">گزارش‌های تصویری</span>
+            </div>
+
+            <div class="glass-panel p-4 border-slate-700/60">
+              <span class="text-xs text-slate-400">خادمان افتخاری</span>
+              <div id="stat-volunteer-count" class="text-xl font-black text-white mt-2">۲۴</div>
+              <span class="text-[10px] text-slate-500">فعال در کارگروه‌ها</span>
+            </div>
+
+            <div class="glass-panel p-4 border-slate-700/60">
+              <span class="text-xs text-slate-400">نذورات ماه</span>
+              <div id="stat-donation-sum" class="text-xl font-black text-emerald-400 mt-2">۷۰۰,۰۰۰</div>
+              <span class="text-[10px] text-slate-500">تومان (اطعام و چایخانه)</span>
+            </div>
+
+            <div class="glass-panel p-4 border-slate-700/60">
+              <span class="text-xs text-slate-400">مستمعین پیامک</span>
+              <div class="text-xl font-black text-white mt-2">۳,۲۸۰</div>
+              <span class="text-[10px] text-slate-500">شماره فعال در سامانه</span>
+            </div>
+          </div>
+
+          <!-- Multimedia Quick Upload Actions -->
+          <div class="glass-panel p-6 border-red-900/40 mb-8 bg-gradient-to-r from-red-950/30 via-slate-900/80 to-slate-950">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 pb-3 border-b border-white/10">
+              <div>
+                <h3 class="text-base font-bold text-white flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+                  <span>مدیریت چندرسانه‌ای و بارگذاری محتوا (ویدیو و نگارخانه)</span>
+                </h3>
+                <p class="text-xs text-slate-400 mt-1">با کلیک روی دکمه‌ها، پنجره کوچک باز شده و می‌توانید فایل ویدیو یا عکس مورد نظر را به همراه مشخصات آپلود نمایید.</p>
+              </div>
+              <div class="flex items-center gap-3 shrink-0">
+                <button type="button" onclick="openAddVideoModal()" class="bg-red-700 hover:bg-red-600 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition cursor-pointer flex items-center gap-2 shadow-lg shadow-red-900/30">
+                  <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                  <span>افزودن ویدیو به آرشیو</span>
+                </button>
+                <button type="button" onclick="openAddPhotoModal()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs px-4 py-2.5 rounded-xl transition cursor-pointer flex items-center gap-2 shadow-lg shadow-amber-900/30">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>افزودن تصویر به نگارخانه</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <a href="#video-archive" class="p-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/60 flex items-center justify-between transition group">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-lg bg-red-900/50 text-red-300 flex items-center justify-center font-bold text-xs">ویدئو</div>
+                  <div>
+                    <span class="text-xs font-bold text-white block group-hover:text-amber-400 transition">مشاهده آرشیو ویدئوها</span>
+                    <span class="text-[11px] text-slate-400">مشاهده کلیپ‌ها، نماهنگ‌ها و مستندات</span>
+                  </div>
+                </div>
+                <span class="text-xs text-amber-400">مشاهده &larr;</span>
+              </a>
+
+              <a href="#photo-gallery" class="p-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/60 flex items-center justify-between transition group">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-lg bg-amber-900/50 text-amber-300 flex items-center justify-center font-bold text-xs">عکس</div>
+                  <div>
+                    <span class="text-xs font-bold text-white block group-hover:text-amber-400 transition">مشاهده نگارخانه تصاویر</span>
+                    <span class="text-[11px] text-slate-400">عکس‌های جلسات هفتگی و مناسبتی</span>
+                  </div>
+                </div>
+                <span class="text-xs text-amber-400">مشاهده &larr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Navigation Panel -->
+          <div class="glass-panel p-6 border-slate-700/60 mb-8">
+            <h3 class="text-base font-bold text-white mb-4">دسترسی‌های سریع مدیریتی</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+              <a href="#add-audio" class="p-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 block transition">
+                <span class="text-sm font-bold text-white block mb-1">مدیریت صوتها</span>
+                <span class="text-[11px] text-slate-400">آپلود و انتشار نوحه</span>
+              </a>
+              <a href="#ceremonies" class="p-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 block transition">
+                <span class="text-sm font-bold text-white block mb-1">برنامه مراسمها</span>
+                <span class="text-[11px] text-slate-400">تقویم جلسات هفتگی</span>
+              </a>
+              <a href="#photo-gallery" class="p-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 block transition">
+                <span class="text-sm font-bold text-white block mb-1">نگارخانه و بنرها</span>
+                <span class="text-[11px] text-slate-400">تصاویر و گزارش مراسم</span>
+              </a>
+              <a href="#sms-preview" class="p-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 block transition">
+                <span class="text-sm font-bold text-white block mb-1">سامانه پیامک</span>
+                <span class="text-[11px] text-slate-400">قالب‌ها و ارسال انبوه</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SCREEN 12: نقشه و راهنمای حسینیه | هیئت شباب علی ابن الحسین (ع) -->
+      <!-- ========================================== -->
+      <section id="screen-map" class="screen-view">
+        <header class="glass-nav px-4 sm:px-8 py-4 border-b border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <!-- 3-Line Hamburger Menu Button at Top Right for Mobile -->
+            <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-900/90 border border-amber-500/30 text-amber-400 hover:text-white hover:bg-slate-800 transition cursor-pointer flex flex-col justify-center items-center gap-1.5 w-11 h-11 shrink-0 shadow-lg shadow-black/40" aria-label="منوی موبایل هیئت">
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+              <span class="w-6 h-0.5 bg-current rounded-full transition-transform"></span>
+            </button>
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-700 to-red-950 border border-amber-500/30 flex items-center justify-center shrink-0">
+              <span class="text-amber-400 font-bold text-sm">نقشه</span>
+            </div>
+            <div>
+              <h2 class="font-bold text-white text-sm sm:text-base">نقشه و راهنمای حسینیه</h2>
+              <p class="text-[10px] text-amber-400">مسیریابی و کروکی خیمه‌گاه شباب علی ابن الحسین (ع)</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button id="btn-map-tab-view" onclick="switchMapTab('view')" class="btn-primary text-xs px-3.5 py-2 cursor-pointer">
+              مشاهده نقشه و مسیریابی
+            </button>
+            <button id="btn-map-tab-edit" onclick="switchMapTab('edit')" class="btn-secondary text-xs px-3.5 py-2 cursor-pointer">
+              افزودن و ویرایش نقشه
+            </button>
+            <a href="#home" data-path="home" class="btn-secondary text-xs px-3 py-2 hidden sm:inline-flex">
+              صفحه اصلی
+            </a>
+          </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+          <nav aria-label="راهنمای مسیر" class="flex items-center gap-2 text-xs text-slate-400">
+            <a href="#home" class="hover:text-amber-400 transition">صفحه اصلی</a>
+            <span>/</span>
+            <span class="text-amber-400 font-medium">نقشه و راهنمای دسترسی به حسینیه</span>
+          </nav>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          
+          <!-- TAB 1: VIEW MAP & ROUTING -->
+          <div id="map-tab-view" class="space-y-8">
+            <!-- Header Card -->
+            <div class="glass-panel p-6 sm:p-8 border-red-900/40 relative overflow-hidden">
+              <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <div>
+                  <span class="px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800 text-xs font-semibold">موقعیت دقیق روی نقشه</span>
+                  <h3 id="map-view-name" class="text-2xl font-black text-white mt-3 mb-2">حسینیه مرکزی هیئت شباب علی ابن الحسین (ع)</h3>
+                  <p id="map-view-address" class="text-xs sm:text-sm text-slate-300 flex items-start gap-1.5 leading-relaxed">
+                    تهران، خیابان دکتر شریعتی، بالاتر از پل رومی، کوچه شهید برادران واعظی، حسینیه شباب علی ابن الحسین (ع)
+                  </p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2 shrink-0">
+                  <span class="text-xs text-slate-400">مختصات:</span>
+                  <span id="map-view-coords" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700 font-mono text-xs text-amber-400 dir-ltr">35.7892, 51.4328</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Map Display -->
+            <div class="glass-panel p-4 sm:p-6 border-slate-700/60 shadow-2xl">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <h4 class="font-bold text-white text-sm sm:text-base">نقشه زنده ماهواره‌ای و معابر حسینیه</h4>
+                </div>
+                <span class="text-xs text-slate-400">امکان بزرگ‌نمایی و حرکت روی نقشه</span>
+              </div>
+
+              <!-- OpenStreetMap Live Iframe -->
+              <iframe id="map-iframe" class="w-full h-80 sm:h-96 rounded-2xl border border-slate-700 shadow-xl bg-slate-900 mb-6" src="https://www.openstreetmap.org/export/embed.html?bbox=51.428%2C35.786%2C51.437%2C35.792&amp;layer=mapnik&amp;marker=35.7892%2C51.4328"></iframe>
+
+              <!-- Direct 1-Click Fast Routing Buttons to Iranian & Global Map Apps -->
+              <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-700/60 mb-2">
+                <span class="text-xs font-bold text-amber-400 block mb-3">مسیریابی با یک کلیک در اپلیکیشن‌های نقشه:</span>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  <a id="link-routing-neshan" href="https://neshan.org/maps/@35.7892,51.4328,17z" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-blue-900/40 hover:bg-blue-800/60 border border-blue-700/60 text-blue-200 text-xs font-semibold py-3 px-4 rounded-xl transition shadow">
+                    <span>مسیریابی در نشان</span>
+                  </a>
+                  <a id="link-routing-balad" href="https://balad.ir/location?latitude=35.7892&longitude=51.4328" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-emerald-900/40 hover:bg-emerald-800/60 border border-emerald-700/60 text-emerald-200 text-xs font-semibold py-3 px-4 rounded-xl transition shadow">
+                    <span>مسیریابی در بلد</span>
+                  </a>
+                  <a id="link-routing-google" href="https://www.google.com/maps/dir/?api=1&destination=35.7892,51.4328" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-red-900/40 hover:bg-red-800/60 border border-red-700/60 text-red-200 text-xs font-semibold py-3 px-4 rounded-xl transition shadow">
+                    <span>گوگل مپ (Google Maps)</span>
+                  </a>
+                  <a id="link-routing-waze" href="https://waze.com/ul?ll=35.7892,51.4328&navigate=yes" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-purple-900/40 hover:bg-purple-800/60 border border-purple-700/60 text-purple-200 text-xs font-semibold py-3 px-4 rounded-xl transition shadow">
+                    <span>ویز (Waze)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Transit & Access Details Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="glass-panel p-5 border-slate-700/60">
+                <div class="flex items-center gap-2 text-amber-400 font-bold text-sm mb-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+                  <span>نزدیک‌ترین مترو</span>
+                </div>
+                <p id="map-view-metro" class="text-xs text-slate-300 leading-relaxed">
+                  ایستگاه متروی قیطریه (خط ۱) - حدود ۶۰۰ متر پیاده‌روی به سمت پل رومی
+                </p>
+              </div>
+
+              <div class="glass-panel p-5 border-slate-700/60">
+                <div class="flex items-center gap-2 text-amber-400 font-bold text-sm mb-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>اتوبوس و BRT</span>
+                </div>
+                <p id="map-view-bus" class="text-xs text-slate-300 leading-relaxed">
+                  خطوط اتوبوس‌های تندرو (BRT) خیابان شریعتی - ایستگاه پل رومی
+                </p>
+              </div>
+
+              <div class="glass-panel p-5 border-slate-700/60">
+                <div class="flex items-center gap-2 text-amber-400 font-bold text-sm mb-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+                  <span>پارکینگ خودروها</span>
+                </div>
+                <p id="map-view-parking" class="text-xs text-slate-300 leading-relaxed">
+                  پارکینگ عمومی جنب پل رومی + کوچه اختصاصی حسینیه جهت پارک خودروهای مستمعین
+                </p>
+              </div>
+            </div>
+
+            <!-- Floor Plan and Entrance Zones -->
+            <div class="glass-panel p-6 border-slate-700/60">
+              <h4 class="font-bold text-white text-base mb-2">راهنمای درب‌های ورود و تفکیک بخش‌ها</h4>
+              <p id="map-view-notes" class="text-xs text-slate-400 mb-6 leading-relaxed">
+                درب ورود برادران از حیاط شمالی و درب ورود خواهران مجهز به آسانسور از ورودی شرقی می‌باشد.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                  <span class="text-xs font-bold text-red-400 block mb-1">درب ورودی برادران</span>
+                  <p class="text-xs text-slate-400">ضلع شمالی حسینیه، مجهز به کفشداری و بازرسی شماره ۱</p>
+                </div>
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                  <span class="text-xs font-bold text-emerald-400 block mb-1">درب ورودی خواهران</span>
+                  <p class="text-xs text-slate-400">ضلع شرقی حسینیه، مجهز به آسانسور، بالابر سالمندان و کفشداری شماره ۲</p>
+                </div>
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                  <span class="text-xs font-bold text-amber-400 block mb-1">چایخانه حضرت علی‌اکبر</span>
+                  <p class="text-xs text-slate-400">محوطه حیاط بیرونی با توزیع چای متبرک و پذیرایی</p>
+                </div>
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                  <span class="text-xs font-bold text-purple-400 block mb-1">حسینیه کودک و مهد</span>
+                  <p class="text-xs text-slate-400">طبقه اول با مربیان مجرب جهت نگهداری و آموزش نونهالان</p>
+                </div>
+              </div>
+
+              <!-- Custom Floorplan Image Preview Box -->
+              <div id="map-floorplan-preview" class="mt-6"></div>
+            </div>
+          </div>
+
+          <!-- TAB 2: EDIT & ADD MAP SUBPAGE (زیر صفحه افزودن و ویرایش نقشه) -->
+          <div id="map-tab-edit" class="glass-panel p-6 sm:p-10 border-amber-500/30 shadow-2xl hidden">
+            <div class="border-b border-white/10 pb-4 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <span class="px-3 py-1 rounded-full bg-amber-950 text-amber-300 border border-amber-800 text-xs font-semibold">زیر صفحه مدیریت و افزودن نقشه</span>
+                <h3 class="text-xl sm:text-2xl font-black text-white mt-2">افزودن و ویرایش نقشه و موقعیت حسینیه</h3>
+                <p class="text-xs text-slate-400 mt-1">
+                  در این بخش می‌توانید مختصات جغرافیایی حسینیه، آدرس پستی، راهنماهای دسترسی و تصویر کروکی را شخصی‌سازی و ذخیره کنید.
+                </p>
+              </div>
+              <button type="button" onclick="resetMapToDefault()" class="btn-secondary text-xs px-3 py-2 shrink-0 border-red-800/60 text-red-300 hover:bg-red-950/40">
+                بازگردانی به مقادیر پیش‌فرض
+              </button>
+            </div>
+
+            <form id="map-edit-form" onsubmit="handleSaveMapForm(event)" class="space-y-6">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">نام حسینیه یا خیمه‌گاه *</label>
+                <input type="text" name="map_name" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">آدرس کامل پستی و موقعیت مکانی *</label>
+                <input type="text" name="map_address" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">عرض جغرافیایی (Latitude) *</label>
+                  <input type="text" name="map_lat" required placeholder="مثال: 35.7892" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white font-mono dir-ltr focus:outline-none focus:border-amber-500">
+                  <span class="text-[11px] text-slate-500 mt-1 block">می‌توانید مختصات را از گوگل مپ کپی کنید</span>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">طول جغرافیایی (Longitude) *</label>
+                  <input type="text" name="map_lng" required placeholder="مثال: 51.4328" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white font-mono dir-ltr focus:outline-none focus:border-amber-500">
+                  <span class="text-[11px] text-slate-500 mt-1 block">مختصات دقیق جهت مسیریابی نشان و بلد</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">راهنمای ایستگاه مترو</label>
+                  <input type="text" name="map_metro" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">راهنمای خطوط اتوبوس / تاکسی</label>
+                  <input type="text" name="map_bus" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">راهنمای پارکینگ خودروها</label>
+                  <input type="text" name="map_parking" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">توضیحات درب‌های ورودی و تفکیک خواهران و برادران</label>
+                <textarea name="map_notes" rows="3" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+              </div>
+
+              <!-- Upload Floor plan / Map Image -->
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-2">افزودن یا تغییر تصویر کروکی دستی / نقشه شماتیک حسینیه</label>
+                <div class="border-2 border-dashed border-slate-700 hover:border-amber-500/50 rounded-2xl p-6 text-center cursor-pointer transition bg-slate-900/40 relative">
+                  <input type="file" accept="image/*" onchange="handleMapImageUpload(event)" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full">
+                  <svg class="w-10 h-10 mx-auto text-amber-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span class="text-xs text-slate-300 block font-medium">برای بارگذاری تصویر کروکی حسینیه کلیک فرمایید</span>
+                  <span class="text-[11px] text-slate-500 mt-1 block">فرمت‌های PNG ، JPG یا WEBP</span>
+                </div>
+              </div>
+
+              <!-- Form Buttons -->
+              <div class="flex items-center justify-end gap-3 pt-4 border-t border-white/10">
+                <button type="button" onclick="switchMapTab('view')" class="btn-secondary text-xs px-5 py-2.5">
+                  انصراف و بازگشت به نقشه
+                </button>
+                <button type="submit" class="btn-primary text-xs px-6 py-2.5">
+                  ذخیره و انتشار تغییرات نقشه
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- MODALS -->
+
+    <!-- Lyrics Modal -->
+    <div id="lyrics-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+      <div class="glass-panel p-6 max-w-lg w-full border-amber-500/30">
+        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+          <div>
+            <h4 id="lyrics-modal-title" class="font-bold text-white text-base">متن شعر</h4>
+            <span id="lyrics-modal-meta" class="text-xs text-amber-400"></span>
+          </div>
+          <button onclick="closeLyricsModal()" class="text-slate-400 hover:text-white text-xl cursor-pointer">&times;</button>
+        </div>
+        <div id="lyrics-modal-content" class="text-xs text-slate-200 leading-relaxed max-h-96 overflow-y-auto whitespace-pre-line"></div>
+      </div>
+    </div>
+
+    <!-- Volunteer Registration Success Digital Card Modal -->
+    <div id="volunteer-success-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+      <div class="glass-panel p-6 max-w-md w-full border-amber-500/40 text-center">
+        <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-3">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-1">ثبت‌نام شما با موفقیت انجام شد</h3>
+        <p class="text-xs text-slate-400 mb-6">کارت خادم افتخاری دیجیتال شما صادر گردید:</p>
+
+        <!-- Digital Card -->
+        <div class="bg-gradient-to-br from-red-950 via-slate-900 to-black p-5 rounded-2xl border border-amber-500/40 text-right mb-6 shadow-2xl relative overflow-hidden">
+          <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
+            <span class="text-xs font-bold text-amber-400">هیئت شباب علی ابن الحسین (ع)</span>
+            <span class="text-[10px] text-slate-400">کارت خادم افتخاری</span>
+          </div>
+          <div id="khadem-card-name" class="font-bold text-white text-base mb-1"></div>
+          <div id="khadem-card-role" class="text-xs text-slate-300 mb-1"></div>
+          <div id="khadem-card-code" class="text-xs text-amber-400 font-mono"></div>
+        </div>
+
+        <button onclick="closeVolunteerModal()" class="w-full btn-secondary text-xs py-2.5">
+          بستن و ادامه
+        </button>
+      </div>
+    </div>
+
+    <!-- Online Donation Receipt Modal -->
+    <div id="donation-receipt-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+      <div class="glass-panel p-6 max-w-md w-full border-emerald-500/40 text-center">
+        <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-3">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-1">تراکنش نذر با موفقیت انجام شد</h3>
+        <p class="text-xs text-slate-400 mb-6">نذر شما قبول درگاه الهی و ذخیره آخرت ان‌شاءالله</p>
+
+        <!-- Receipt Box -->
+        <div class="bg-slate-900 p-4 rounded-xl border border-slate-700 text-xs space-y-2 text-right mb-6">
+          <div class="flex justify-between"><span class="text-slate-400">کد رهگیری شاپرک:</span><span id="receipt-code" class="text-amber-400 font-mono font-bold"></span></div>
+          <div class="flex justify-between"><span class="text-slate-400">مبلغ اهدایی:</span><span id="receipt-amount" class="text-white font-bold"></span></div>
+          <div class="flex justify-between"><span class="text-slate-400">نیت نذر:</span><span id="receipt-intention" class="text-slate-300"></span></div>
+          <div class="flex justify-between"><span class="text-slate-400">نام بانی:</span><span id="receipt-donor" class="text-slate-300"></span></div>
+        </div>
+
+        <button onclick="closeReceiptModal()" class="w-full btn-secondary text-xs py-2.5">
+          تأیید و دریافت فیش
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- Add Video Modal (صفحه کوچک افزودن و آپلود ویدیو) -->
+    <!-- ========================================== -->
+    <div id="add-video-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto hidden">
+      <div class="glass-panel p-5 sm:p-7 max-w-xl w-full border-red-900/60 my-8 shadow-2xl relative text-right animate-fadeIn">
+        <!-- Modal Header -->
+        <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-red-900/60 text-red-300 flex items-center justify-center border border-red-600/40 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">افزودن و بارگذاری ویدیو به آرشیو</h3>
+              <p class="text-[11px] text-amber-400">ثبت کلیپ، نماهنگ یا مستند در پرتال هیئت شباب علی ابن الحسین (ع)</p>
+            </div>
+          </div>
+          <button type="button" onclick="closeAddVideoModal()" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 flex items-center justify-center text-xl cursor-pointer transition">&times;</button>
+        </div>
+
+        <!-- Form -->
+        <form id="add-video-form" onsubmit="handleAddVideoSubmit(event)" class="space-y-4">
+          <!-- Video File Upload Area -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">بارگذاری فایل ویدیو یا تیزر</label>
+            <label class="flex flex-col items-center justify-center border-2 border-dashed border-red-700/50 hover:border-red-500 rounded-2xl p-5 cursor-pointer bg-slate-900/70 hover:bg-slate-800/80 transition group text-center">
+              <div class="w-12 h-12 rounded-full bg-red-900/30 text-red-400 flex items-center justify-center mb-2 group-hover:scale-110 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+              </div>
+              <span class="text-xs font-bold text-white group-hover:text-amber-400 transition">برای انتخاب یا آپلود ویدیو کلیک کنید</span>
+              <span class="text-[10px] text-slate-400 mt-1">فرمت‌های مجاز: MP4, WebM, MKV, MOV (پشتیبانی تا ۵۰۰ مگابایت)</span>
+              <input type="file" id="video-file-input" accept="video/*" onchange="handleVideoFileSelected(event)" class="hidden">
+            </label>
+            <video id="video-preview-player" controls class="hidden w-full max-h-48 rounded-xl bg-black border border-slate-700 mt-2 shadow-inner"></video>
+            <div id="video-file-info" class="text-[11px] text-emerald-400 mt-1 font-mono"></div>
+          </div>
+
+          <!-- Video External URL (Optional) -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">یا لینک ویدیو در آپارات / اینستاگرام / یوتیوب (اختیاری)</label>
+            <input type="url" name="video_url" placeholder="https://aparat.com/v/..." dir="ltr" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition font-mono">
+          </div>
+
+          <!-- Video Title -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">عنوان ویدیو یا نماهنگ <span class="text-red-400">*</span></label>
+            <input type="text" name="video_title" required placeholder="مثال: نماهنگ علی‌اکبر لیلا - شب هشتم محرم الحرام" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition">
+          </div>
+
+          <!-- Grid: Speaker / Eulogist & Category -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">مداح / سخنران</label>
+              <input type="text" name="video_speaker" placeholder="مثال: کربلایی محمدحسین پویانفر" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">دسته‌بندی کلیپ</label>
+              <select name="video_category" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition cursor-pointer">
+                <option value="نماهنگ ویژه">نماهنگ ویژه</option>
+                <option value="شور و عزاداری">شور و عزاداری</option>
+                <option value="روضه و مرثیه">روضه و مرثیه</option>
+                <option value="سخنرانی و معارف">سخنرانی و معارف</option>
+                <option value="مستند و گزارش">مستند و گزارش خادمین</option>
+                <option value="تیزر مراسم">تیزر و اطلاعیه مراسم</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Grid: Quality & Duration -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">کیفیت ویدیو</label>
+              <select name="video_quality" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition cursor-pointer">
+                <option value="کیفیت 4K">کیفیت 4K Ultra HD</option>
+                <option value="1080p Full HD" selected>1080p Full HD</option>
+                <option value="720p HD">720p HD</option>
+                <option value="مناسب موبایل و استوری">کیفیت سبک (مخصوص استوری)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">مدت زمان</label>
+              <input type="text" name="video_duration" placeholder="مثال: ۰۸:۲۴" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition">
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">توضیحات و شناسنامه اثر</label>
+            <textarea name="video_desc" rows="2" placeholder="توضیحاتی پیرامون مراسم، محل ضبط یا فرازهایی از کلیپ..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-400 transition resize-none"></textarea>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex items-center justify-end gap-3 pt-3 border-t border-white/10">
+            <button type="button" onclick="closeAddVideoModal()" class="btn-secondary text-xs px-4 py-2.5 cursor-pointer">
+              انصراف و بستن
+            </button>
+            <button type="submit" class="btn-primary text-xs px-5 py-2.5 cursor-pointer flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+              <span>بارگذاری و انتشار ویدیو</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- Add Photo Modal (صفحه کوچک افزودن و آپلود تصویر) -->
+    <!-- ========================================== -->
+    <div id="add-photo-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto hidden">
+      <div class="glass-panel p-5 sm:p-7 max-w-xl w-full border-amber-500/50 my-8 shadow-2xl relative text-right animate-fadeIn">
+        <!-- Modal Header -->
+        <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/40 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">افزودن و بارگذاری تصویر به نگارخانه</h3>
+              <p class="text-[11px] text-amber-400">انتشار گزارش تصویری در نگارخانه پرتال هیئت شباب علی ابن الحسین (ع)</p>
+            </div>
+          </div>
+          <button type="button" onclick="closeAddPhotoModal()" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 flex items-center justify-center text-xl cursor-pointer transition">&times;</button>
+        </div>
+
+        <!-- Form -->
+        <form id="add-photo-form" onsubmit="handleAddPhotoSubmit(event)" class="space-y-4">
+          <!-- Photo File Upload Area -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">انتخاب و بارگذاری تصویر <span class="text-red-400">*</span></label>
+            <label class="flex flex-col items-center justify-center border-2 border-dashed border-amber-500/50 hover:border-amber-400 rounded-2xl p-5 cursor-pointer bg-slate-900/70 hover:bg-slate-800/80 transition group text-center">
+              <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center mb-2 group-hover:scale-110 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <span class="text-xs font-bold text-white group-hover:text-amber-400 transition">برای انتخاب یا آپلود عکس کلیک کنید</span>
+              <span class="text-[10px] text-slate-400 mt-1">فرمت‌های مجاز: JPG, PNG, WEBP با بالاترین کیفیت ممکن</span>
+              <input type="file" id="photo-file-input" accept="image/*" onchange="handlePhotoFileSelected(event)" class="hidden">
+            </label>
+            <div id="photo-preview-box" class="hidden mt-3 text-center">
+              <img id="photo-preview-img" class="w-full max-h-52 object-cover rounded-xl border border-amber-500/40 shadow-md mx-auto" alt="پیش‌نمایش تصویر">
+              <p class="text-[11px] text-emerald-400 mt-1">پیش‌نمایش تصویر انتخابی برای گالری</p>
+            </div>
+          </div>
+
+          <!-- Photo Title -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">عنوان تصویر یا گزارش تصویری <span class="text-red-400">*</span></label>
+            <input type="text" name="photo_title" required placeholder="مثال: شور عاشورایی جوانان هیئت - شب یازدهم محرم" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition">
+          </div>
+
+          <!-- Grid: Occasion & Category -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">مناسبت / رویداد</label>
+              <input type="text" name="photo_occasion" placeholder="مثال: ایام فاطمیه اول ۱۴۴۶" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">دسته‌بندی نگارخانه</label>
+              <select name="photo_category" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition cursor-pointer">
+                <option value="محرم و صفر">محرم و صفر</option>
+                <option value="ایام فاطمیه">ایام فاطمیه</option>
+                <option value="ایستگاه صلواتی و چایخانه">ایستگاه صلواتی و چایخانه</option>
+                <option value="اردوی جهادی">اردوی جهادی و خیریه</option>
+                <option value="مراسم هفتگی">مراسم هفتگی حسینیه</option>
+                <option value="جشن و موالید">جشن و اعیاد اهل‌بیت</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Photographer / Credit -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">نام عکاس یا واحد تصویربرداری</label>
+            <input type="text" name="photo_photographer" placeholder="مثال: کارگروه رسانه و تصویربرداری هیئت شباب علی ابن الحسین (ع)" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400 transition">
+          </div>
+
+          <!-- Description -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">توضیحات و شرح تصویر</label>
+            <textarea name="photo_desc" rows="2" placeholder="توضیحاتی درباره حال‌وهوای این عکس و جزئیات ثبت آن..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-400 transition resize-none"></textarea>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex items-center justify-end gap-3 pt-3 border-t border-white/10">
+            <button type="button" onclick="closeAddPhotoModal()" class="btn-secondary text-xs px-4 py-2.5 cursor-pointer">
+              انصراف و بستن
+            </button>
+            <button type="submit" class="btn-gold text-xs px-5 py-2.5 cursor-pointer flex items-center gap-2">
+              <svg class="w-4 h-4 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+              <span>بارگذاری و ثبت در گالری</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- Video Player Lightbox Modal -->
+    <!-- ========================================== -->
+    <div id="video-player-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
+      <div class="glass-panel p-5 max-w-2xl w-full border-red-800/60 shadow-2xl relative text-right">
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-white/10">
+          <div>
+            <h4 id="video-player-title" class="font-bold text-white text-base">پخش ویدیو</h4>
+            <span id="video-player-desc" class="text-xs text-amber-400"></span>
+          </div>
+          <button type="button" onclick="closeVideoPlayerModal()" class="text-slate-400 hover:text-white text-2xl cursor-pointer">&times;</button>
+        </div>
+        <div class="rounded-xl overflow-hidden bg-black flex items-center justify-center min-h-[260px] border border-slate-800 mb-4">
+          <video id="video-player-element" controls class="w-full max-h-[420px] object-contain"></video>
+        </div>
+        <div class="flex justify-end">
+          <button type="button" onclick="closeVideoPlayerModal()" class="btn-secondary text-xs px-5 py-2 cursor-pointer">
+            بستن مدیا پلیر
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- Photo Viewer Lightbox Modal -->
+    <!-- ========================================== -->
+    <div id="photo-viewer-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
+      <div class="glass-panel p-5 max-w-2xl w-full border-amber-500/40 shadow-2xl relative text-right">
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-white/10">
+          <div>
+            <h4 id="photo-viewer-title" class="font-bold text-white text-base">نمایش تصویر نگارخانه</h4>
+            <span id="photo-viewer-meta" class="text-xs text-amber-400"></span>
+          </div>
+          <button type="button" onclick="closePhotoViewerModal()" class="text-slate-400 hover:text-white text-2xl cursor-pointer">&times;</button>
+        </div>
+        <div class="rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center max-h-[460px] border border-slate-800 mb-4">
+          <img id="photo-viewer-image" src="" class="w-full max-h-[440px] object-contain hidden" alt="تصویر مراسم">
+          <div id="photo-viewer-fallback" class="p-12 text-center text-4xl text-amber-500 font-serif hidden"></div>
+        </div>
+        <p id="photo-viewer-desc" class="text-xs text-slate-300 leading-relaxed mb-4"></p>
+        <div class="flex justify-end">
+          <button type="button" onclick="closePhotoViewerModal()" class="btn-secondary text-xs px-5 py-2 cursor-pointer">
+            بستن تصویر
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla Javascript Application Core -->
+    <script src="./assets/app.js"></script>
+
+    <!-- Vite module entry for local bundling -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
